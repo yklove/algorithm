@@ -25,6 +25,11 @@ public class Problem1 {
     class Solution {
 
         /**
+         * 以遍历到的点作为绳子的末位点，则起始点应该是当前遍历到的点-绳子长度。
+         * 所以接下来二分查找绳子的起始点，找到起始点的位置，两者相减可以算出覆盖的点的数量。
+         * 遍历 + 二分
+         * n * log(n)
+         * 
          * @param point         绳子上的点
          * @param theRopeLength 绳子长度
          * @return
