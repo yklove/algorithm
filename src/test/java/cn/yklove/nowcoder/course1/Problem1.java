@@ -1,6 +1,8 @@
 package cn.yklove.nowcoder.course1;
 
+import cn.yklove.leetcode.contest.weekly204.LeetCode1;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -10,12 +12,21 @@ import java.util.Arrays;
  */
 public class Problem1 {
 
+    private Solution solution;
+
+    @Before
+    public void init() {
+        solution = new Solution();
+    }
+
     @Test
-    public void test() {
-        long startTime = System.currentTimeMillis();
-        Solution solution = new Solution();
+    public void test1() {
         Assert.assertEquals(solution.aPointCoveredByARope(new int[]{0, 1, 3, 4, 5, 6, 7, 10}, 4), 5);
-        System.out.println(System.currentTimeMillis() - startTime);
+    }
+
+    @Test
+    public void test2() {
+        Assert.assertEquals(solution.aPointCoveredByARope2(new int[]{0, 1, 3, 4, 5, 6, 7, 10}, 4), 5);
     }
 
     /**
@@ -44,6 +55,27 @@ public class Problem1 {
                 } else {
                     int startIndex = Math.abs(Arrays.binarySearch(point, startNumber));
                     max = Math.max(max, endIndex - startIndex + 1);
+                }
+            }
+            return max;
+        }
+
+        /**
+         * 双指针。
+         * 如果end和start的长度小于theRopeLength，end继续增加。
+         * 否则start增加。
+         * 算法复杂度O(n)
+         */
+        public int aPointCoveredByARope2(int[] point, int theRopeLength) {
+            int start = 0;
+            int end = 0;
+            int max = 0;
+            while (end < point.length) {
+                if (point[end] - point[start] <= theRopeLength) {
+                    max = Math.max(end - start + 1, max);
+                    end++;
+                } else {
+                    start++;
                 }
             }
             return max;
