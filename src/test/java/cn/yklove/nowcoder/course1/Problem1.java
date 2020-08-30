@@ -1,6 +1,5 @@
 package cn.yklove.nowcoder.course1;
 
-import cn.yklove.leetcode.contest.weekly204.LeetCode1;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

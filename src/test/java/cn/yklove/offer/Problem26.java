@@ -1,12 +1,7 @@
 package cn.yklove.offer;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.LinkedList;
 
 public class Problem26 {
 

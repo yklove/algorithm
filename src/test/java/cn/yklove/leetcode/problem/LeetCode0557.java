@@ -1,6 +1,5 @@
 package cn.yklove.leetcode.problem;
 
-import cn.yklove.leetcode.contest.weekly204.LeetCode2;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
