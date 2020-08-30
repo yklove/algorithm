@@ -39,7 +39,7 @@ public class Problem2 {
 
         /**
          * 常规解
-         * 
+         *
          * @param n 想购买的苹果个数
          * @return 最小使用袋子的个数
          */
@@ -65,7 +65,7 @@ public class Problem2 {
 
         /**
          * 打表，通过常规解，打印出答案，寻找规律
-         * 
+         *
          * @param n 想购买的苹果个数
          * @return 最小使用袋子的个数
          */

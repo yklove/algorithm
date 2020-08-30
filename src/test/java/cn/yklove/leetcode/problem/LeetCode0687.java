@@ -1,4 +1,4 @@
-package cn.yklove;
+package cn.yklove.leetcode.problem;
 
 import java.util.Objects;
 

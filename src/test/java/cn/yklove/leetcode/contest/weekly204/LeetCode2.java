@@ -15,45 +15,45 @@ public class LeetCode2 {
 
     @Test
     public void test() {
-        Assert.assertEquals(solution.getMaxLen(new int[] { 1, -2, -3, 4 }), 4);
+        Assert.assertEquals(solution.getMaxLen(new int[]{1, -2, -3, 4}), 4);
     }
 
     @Test
     public void test2() {
-        Assert.assertEquals(solution.getMaxLen(new int[] { 0, 1, -2, -3, -4 }), 3);
+        Assert.assertEquals(solution.getMaxLen(new int[]{0, 1, -2, -3, -4}), 3);
     }
 
     @Test
     public void test3() {
-        Assert.assertEquals(solution.getMaxLen(new int[] { 1, 2, 3, 5, -6, 4, 0, 10 }), 4);
+        Assert.assertEquals(solution.getMaxLen(new int[]{1, 2, 3, 5, -6, 4, 0, 10}), 4);
     }
 
     @Test
     public void test4() {
-        Assert.assertEquals(solution.getMaxLen(new int[] { -1, -1, 1, -1, 1, 1, 1 }), 6);
+        Assert.assertEquals(solution.getMaxLen(new int[]{-1, -1, 1, -1, 1, 1, 1}), 6);
     }
 
     @Test
     public void test5() {
-        Assert.assertEquals(solution.getMaxLen(new int[] { 0, 0, 0, 0 }), 0);
+        Assert.assertEquals(solution.getMaxLen(new int[]{0, 0, 0, 0}), 0);
     }
 
     @Test
     public void test6() {
-        Assert.assertEquals(solution.getMaxLen(new int[] { -1, -1 }), 2);
+        Assert.assertEquals(solution.getMaxLen(new int[]{-1, -1}), 2);
     }
 
     class Solution {
 
         /**
          * 先不考虑0的情况。
-         * 
+         * <p>
          * 记录下起始位置，记为wz1。记录下第一次负数出现次数为奇次数的位置，记为wz2。
          * 其余情况，如果负数出现次数为偶次，答案是max(ret,当前位置-起始位置)。
          * 如果负数出现次数为奇次，答案是max(ret,当前位置-第一次负数出现位置)。
-         * 
+         * <p>
          * 如果要考虑0的话，实际上只需要更新起始位置即可，相当于将数组切开。
-         * 
+         *
          * @param nums
          * @return
          */

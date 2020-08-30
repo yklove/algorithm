@@ -15,28 +15,29 @@ public class LeetCode1 {
 
     @Test
     public void test() {
-        Assert.assertTrue(solution.containsPattern(new int[] { 1, 2, 4, 4, 4, 4 }, 1, 3));
+        Assert.assertTrue(solution.containsPattern(new int[]{1, 2, 4, 4, 4, 4}, 1, 3));
     }
 
     @Test
     public void test2() {
-        Assert.assertFalse(solution.containsPattern(new int[] { 1, 2, 1, 2, 1, 3 }, 2, 3));
+        Assert.assertFalse(solution.containsPattern(new int[]{1, 2, 1, 2, 1, 3}, 2, 3));
     }
 
     @Test
     public void test3() {
-        Assert.assertTrue(solution.containsPattern(new int[] { 1, 2, 1, 2, 1, 1, 1, 3 }, 2, 2));
+        Assert.assertTrue(solution.containsPattern(new int[]{1, 2, 1, 2, 1, 1, 1, 3}, 2, 2));
     }
 
     @Test
     public void test4() {
-        Assert.assertFalse(solution.containsPattern(new int[] { 1, 2, 3, 1, 2 }, 2, 2));
+        Assert.assertFalse(solution.containsPattern(new int[]{1, 2, 3, 1, 2}, 2, 2));
     }
 
     class Solution {
 
         /**
          * 暴力求解…
+         *
          * @param arr
          * @param m
          * @param k

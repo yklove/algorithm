@@ -29,7 +29,7 @@ public class Problem1 {
          * 所以接下来二分查找绳子的起始点，找到起始点的位置，两者相减可以算出覆盖的点的数量。
          * 遍历 + 二分
          * n * log(n)
-         * 
+         *
          * @param point         绳子上的点
          * @param theRopeLength 绳子长度
          * @return
