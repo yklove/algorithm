@@ -59,14 +59,14 @@ public class Problem4 {
                     }
                 }
             }
-            int max = Integer.MIN_VALUE;
+            int max = 0;
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     // 枚举边长
                     for (int k = 0; i + k < n && j + k < n; k++) {
                         // 判断是否四周都是1
-                        if (down[i][j] >= k && down[i][j + k] >= k
-                                && right[i][j] >= k && right[i + k][j] >= k) {
+                        if (down[i][j] > k && down[i][j + k] > k
+                                && right[i][j] > k && right[i + k][j] > k) {
                             max = Math.max(max, k + 1);
                         }
                     }
@@ -87,6 +87,16 @@ public class Problem4 {
                 {0, 1, 1, 1, 1},
                 {0, 1, 0, 1, 1}
         }), 4);
+    }
+
+    @Test
+    public void test2() {
+        Assert.assertEquals(solution.lookingForTheLargestSquare(new int[][]{{0}}), 0);
+    }
+
+    @Test
+    public void test3() {
+        Assert.assertEquals(solution.lookingForTheLargestSquare(new int[][]{{1}}), 1);
     }
 
 }
