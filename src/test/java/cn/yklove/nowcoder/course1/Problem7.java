@@ -3,8 +3,6 @@ package cn.yklove.nowcoder.course1;
 import org.junit.Assert;
 import org.junit.Test;
 
-import cn.yklove.nowcoder.course1.Problem6.Solution;
-
 public class Problem7 {
 
     /**
