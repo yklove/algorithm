@@ -1,11 +1,11 @@
 package cn.yklove.nowcoder.course1;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
-import org.junit.Test;
 
 public class Problem6 {
 
@@ -23,7 +23,7 @@ public class Problem6 {
         /**
          * 思路，将随机返回的结果转换成0和1，如果0或1多了，就不要了，重新随机一次； 新结果通过多次随机产生的0和1拼二进制位来生成想要的数字。
          * 1~7=0~6+1=2个二进制位，所以需要随机出两个二进制数字
-         * 
+         *
          * @return
          */
         public int g() {
@@ -74,7 +74,7 @@ public class Problem6 {
     @Test
     public void test() {
         List<Integer> list = new ArrayList<>();
-        for(int i=0;i<10000000;i++){
+        for (int i = 0; i < 10000000; i++) {
             list.add(solution.g());
         }
         Map<Integer, Long> collect = list.stream().collect(Collectors.groupingBy(integer -> integer, Collectors.counting()));

@@ -2,7 +2,6 @@ package cn.yklove.leetcode.contest.spring2021;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**

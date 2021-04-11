@@ -17,7 +17,7 @@ public class LeetCode2 {
         public int minElements(int[] nums, int limit, int goal) {
             long sum = 0;
             for (int num : nums) {
-                sum+=num;
+                sum += num;
             }
             long difference = Math.abs(goal - sum);
             return (int) (difference / limit + (difference % limit == 0 ? 0 : 1));

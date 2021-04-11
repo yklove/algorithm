@@ -7,7 +7,7 @@ public class LeetCode1 {
 
     class Solution {
         public String interpret(String command) {
-            return command.replaceAll("[(]al[)]","al").replaceAll("[(][)]","o");
+            return command.replaceAll("[(]al[)]", "al").replaceAll("[(][)]", "o");
         }
     }
 

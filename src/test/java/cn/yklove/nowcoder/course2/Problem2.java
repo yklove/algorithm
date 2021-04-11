@@ -1,10 +1,6 @@
 package cn.yklove.nowcoder.course2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Problem2 {
 
@@ -12,7 +8,6 @@ public class Problem2 {
 
         /**
          * 给定一个数组arr，求差值为k的去重数字对。
-         * 
          */
         public List<List<Integer>> differenceValue(int[] arr, int k) {
             Set<Integer> set = new HashSet<>();

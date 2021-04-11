@@ -1,6 +1,5 @@
 package cn.yklove.leetcode.contest.weekly236;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

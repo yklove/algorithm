@@ -38,12 +38,12 @@ public class Problem56_2 {
 
     @Test
     public void test() {
-        Assert.assertEquals(4, solution.singleNumber(new int[] { 3, 4, 3, 3 }));
+        Assert.assertEquals(4, solution.singleNumber(new int[]{3, 4, 3, 3}));
     }
 
     @Test
     public void test2() {
-        Assert.assertEquals(1, solution.singleNumber(new int[] { 9, 1, 7, 9, 7, 9, 7 }));
+        Assert.assertEquals(1, solution.singleNumber(new int[]{9, 1, 7, 9, 7, 9, 7}));
     }
 
 }

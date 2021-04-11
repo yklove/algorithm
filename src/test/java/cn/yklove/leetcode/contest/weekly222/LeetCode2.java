@@ -3,7 +3,10 @@ package cn.yklove.leetcode.contest.weekly222;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author qinggeng

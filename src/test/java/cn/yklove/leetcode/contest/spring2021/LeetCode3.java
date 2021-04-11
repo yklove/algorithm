@@ -3,9 +3,7 @@ package cn.yklove.leetcode.contest.spring2021;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.PriorityQueue;
 
 /**
  * @author qinggeng
@@ -23,7 +21,7 @@ public class LeetCode3 {
         public int magicTower(int[] nums) {
             long tmp = 1;
             for (int num : nums) {
-                tmp+=num;
+                tmp += num;
             }
             if (tmp <= 0) {
                 return -1;

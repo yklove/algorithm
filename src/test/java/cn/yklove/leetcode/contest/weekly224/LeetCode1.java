@@ -11,10 +11,10 @@ public class LeetCode1 {
             int maxCount = 0;
             for (int[] rectangle : rectangles) {
                 int tmpMax = Math.min(rectangle[0], rectangle[1]);
-                if(tmpMax > max){
+                if (tmpMax > max) {
                     maxCount = 1;
                     max = tmpMax;
-                }else if(tmpMax == max){
+                } else if (tmpMax == max) {
                     maxCount++;
                 }
             }

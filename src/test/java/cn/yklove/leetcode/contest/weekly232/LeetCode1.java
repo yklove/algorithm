@@ -40,8 +40,8 @@ public class LeetCode1 {
     Solution solution = new Solution();
 
     @Test
-    public void test(){
-        Assert.assertTrue(solution.areAlmostEqual("bank","kanb"));
+    public void test() {
+        Assert.assertTrue(solution.areAlmostEqual("bank", "kanb"));
     }
 
 }

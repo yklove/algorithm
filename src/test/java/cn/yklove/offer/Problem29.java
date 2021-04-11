@@ -70,24 +70,24 @@ public class Problem29 {
 
     @Test
     public void test() {
-        Assert.assertArrayEquals(solution.spiralOrder(new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }),
-                new int[] { 1, 2, 3, 6, 9, 8, 7, 4, 5 });
+        Assert.assertArrayEquals(solution.spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}),
+                new int[]{1, 2, 3, 6, 9, 8, 7, 4, 5});
     }
 
     @Test
     public void test2() {
-        Assert.assertArrayEquals(solution.spiralOrder(new int[][] { { 1 } }), new int[] { 1 });
+        Assert.assertArrayEquals(solution.spiralOrder(new int[][]{{1}}), new int[]{1});
     }
 
     @Test
     public void test4() {
         Assert.assertArrayEquals(
-                solution.spiralOrder(new int[][] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } }),
-                new int[] { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 });
+                solution.spiralOrder(new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}),
+                new int[]{1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7});
     }
 
     @Test
     public void test5() {
-        Assert.assertArrayEquals(solution.spiralOrder(new int[][] {}), new int[] {});
+        Assert.assertArrayEquals(solution.spiralOrder(new int[][]{}), new int[]{});
     }
 }

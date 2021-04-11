@@ -32,10 +32,13 @@ public class Main2 {
             int a = i;
             int b = i;
             //writer
-            Thread writerThread = new Thread(() -> {setData(a, b);});
+            Thread writerThread = new Thread(() -> {
+                setData(a, b);
+            });
             //reader
             Thread readerThread = new Thread(() -> {
-                while (data == null) {}
+                while (data == null) {
+                }
                 int x = data.getA();
                 int y = data.getB();
                 if (x != y) {

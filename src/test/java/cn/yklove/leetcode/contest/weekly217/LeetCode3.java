@@ -14,7 +14,7 @@ public class LeetCode3 {
     Solution solution = new Solution();
 
     @Test
-    public void test(){
+    public void test() {
 
     }
 

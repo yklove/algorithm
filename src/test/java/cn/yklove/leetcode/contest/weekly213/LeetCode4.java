@@ -7,8 +7,7 @@ import org.junit.Test;
  */
 public class LeetCode4 {
 
-    class Solution{
-
+    class Solution {
 
 
     }

@@ -3,10 +3,6 @@ package cn.yklove.leetcode.contest.weekly220;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-
 /**
  * @author qinggeng
  */
@@ -31,7 +27,7 @@ public class LeetCode3 {
                         tmpIndex = start + i;
                     }
                 }
-                if (tmp < 0 && start + k >= nums.length-1) {
+                if (tmp < 0 && start + k >= nums.length - 1) {
                     score += nums[nums.length - 1];
                     start = nums.length - 1;
                 } else {
@@ -67,6 +63,6 @@ public class LeetCode3 {
 
     @Test
     public void test5() {
-        Assert.assertEquals(-4, solution.maxResult(new int[]{-1,0,-2,-3}, 2));
+        Assert.assertEquals(-4, solution.maxResult(new int[]{-1, 0, -2, -3}, 2));
     }
 }

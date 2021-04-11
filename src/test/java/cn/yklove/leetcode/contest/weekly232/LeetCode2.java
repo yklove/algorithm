@@ -1,8 +1,5 @@
 package cn.yklove.leetcode.contest.weekly232;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author qinggeng
  */

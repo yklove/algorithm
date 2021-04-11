@@ -3,7 +3,6 @@ package cn.yklove.leetcode.contest.weekly221;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -56,7 +55,7 @@ public class LeetCode2 {
 
     @Test
     public void test1() {
-        Assert.assertEquals(31,solution.eatenApples(new int[]{9, 10, 1, 7, 0, 2, 1, 4, 1, 7, 0, 11, 0, 11, 0, 0, 9, 11, 11, 2, 0, 5, 5},
+        Assert.assertEquals(31, solution.eatenApples(new int[]{9, 10, 1, 7, 0, 2, 1, 4, 1, 7, 0, 11, 0, 11, 0, 0, 9, 11, 11, 2, 0, 5, 5},
                 new int[]{3, 19, 1, 14, 0, 4, 1, 8, 2, 7, 0, 13, 0, 13, 0, 0, 2, 2, 13, 1, 0, 3, 7}));
     }
 

@@ -1,11 +1,10 @@
 package cn.yklove.leetcode.contest.weekly233;
 
-import com.sun.tools.corba.se.idl.constExpr.Or;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.math.BigInteger;
-import java.util.*;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 /**
  * @author qinggeng

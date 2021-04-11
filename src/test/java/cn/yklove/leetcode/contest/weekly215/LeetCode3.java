@@ -45,7 +45,7 @@ public class LeetCode3 {
                     break;
                 }
             }
-            if(ans == Integer.MAX_VALUE){
+            if (ans == Integer.MAX_VALUE) {
                 return -1;
             }
             return ans;

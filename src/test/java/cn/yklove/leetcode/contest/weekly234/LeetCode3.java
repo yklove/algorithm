@@ -55,7 +55,7 @@ public class LeetCode3 {
                 }
             }
             StringBuilder stringBuilder = new StringBuilder();
-            while (!stack.isEmpty()){
+            while (!stack.isEmpty()) {
                 stringBuilder.append(stack.pop());
             }
             return stringBuilder.reverse().toString();

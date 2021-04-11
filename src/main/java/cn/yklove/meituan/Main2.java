@@ -2,7 +2,6 @@ package cn.yklove.meituan;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * @author qinggeng
@@ -14,7 +13,7 @@ public class Main2 {
         list.add(1);
         list.add(2);
         System.out.println(list.size());
-        list.add(0,3);
+        list.add(0, 3);
         System.out.println(list.size());
         System.out.println(list);
     }

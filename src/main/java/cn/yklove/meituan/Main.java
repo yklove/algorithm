@@ -20,16 +20,16 @@ public class Main {
             for (char c : s.toCharArray()) {
                 set.add(c);
             }
-            if(set.size() != 6){
+            if (set.size() != 6) {
                 continue;
             }
-            int x = Integer.valueOf(s.substring(0,2));
-            int y = Integer.valueOf(s.substring(2,4));
-            int z = Integer.valueOf(s.substring(4,6));
-            if(x == 0 || y == 0 || z == 0){
+            int x = Integer.valueOf(s.substring(0, 2));
+            int y = Integer.valueOf(s.substring(2, 4));
+            int z = Integer.valueOf(s.substring(4, 6));
+            if (x == 0 || y == 0 || z == 0) {
                 continue;
             }
-            if(x + y == z){
+            if (x + y == z) {
                 ans++;
             }
         }

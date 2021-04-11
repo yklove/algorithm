@@ -1,13 +1,10 @@
-
-import sun.misc.Contended;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdd3 {
 
     // 1 定义的承装字符串的容器
-    private  volatile List list = new ArrayList();
+    private volatile List list = new ArrayList();
 
     // 2 追加方法
     public void add() {
@@ -50,7 +47,7 @@ public class ListAdd3 {
                             throw new RuntimeException();
                         }
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
 
                 }
 

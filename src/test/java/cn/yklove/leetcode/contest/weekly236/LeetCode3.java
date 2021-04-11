@@ -40,7 +40,7 @@ public class LeetCode3 {
         }
 
         public int process(int x, int y, int[] obstacles) {
-            if(dp[x][y] != -1){
+            if (dp[x][y] != -1) {
                 return dp[x][y];
             }
             if (x == obstacles.length - 1) {

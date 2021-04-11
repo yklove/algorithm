@@ -3,7 +3,6 @@ package cn.yklove.offer58;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @author qinggeng
@@ -34,7 +33,7 @@ public class Main1 {
 
     @Test
     public void test() {
-        int[] ints = solution.removeDuplicate(new int[]{1,1,1,2,1});
+        int[] ints = solution.removeDuplicate(new int[]{1, 1, 1, 2, 1});
         for (int anInt : ints) {
             System.out.print(anInt + " ");
         }
